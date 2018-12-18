@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1 id="title">FCC Survey Form</h1>
+    <p id="description">A short survey about your gaming preferences</p>
+  </header>
+  <main>
+    <form action="" id="survey-form">
+    <section id="details-section">
+      <label for="name" id="name-label">Name <span>*</span></label>
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <label for="email" id="email-label">Email <span>*</span></label>
+      <input type="email" name="email" id="email" placeholder="Email adress" required>
+      <label for="number" id="number-label">Age <span>*</span></label>
+      <input type="number" id="number" name="number" min="1" max="122" placeholder="Your age" required>
+      <div></div> <!-- placeholder div -->
+      <p>Fields marked with * are required</p>
+    </section>
+    <section id="dropdown-section">
+      <label for="dropdown">What kind of gamer are you?</label>
+      <select name="dropdown" id="dropdown">
+          <option value="">Please select one</option>
+          <option value="casual">Casual</option>
+          <option value="hardcore">Hardcore</option>
+          <option value="professional">Professional</option>
+          <option value="tryhard">Tryhard</option>
+          <option value="retro">Retro</option>
+      </select>
+    </section>
+    <section id="radio-section">
+      <div class="radio-p">
+        <p>On average, how many hours a day do you spend playing games?</p>
+      </div>
+      <div class="input-div">
+        <input type="radio" name="radio" id="none-two" value="none-two">
+        <label class="label1" for="none-two"> 0h to 2h</label><br>
+        <input type="radio" name="radio" id="three-four" value="three-four">
+        <label class="label2" for="three-four"> 3h to 4h</label><br>
+        <input type="radio" name="radio" id="four-six" value="four-six">
+        <label class="label3" for="four-six"> 4h to 6h</label><br>
+        <input type="radio" name="radio" id="seven-eight" value="seven-eight">
+        <label class="label4" for="seven-eight"> 7h to 8h</label><br>
+        <input type="radio" name="radio" id="eight-more" value="eight-more">
+        <label class="label5" for="eight-more"> 8h and more</label>
+      </div>
+    </section>
+    <section id="checkbox-section">
+      <div class="checkbox-p">
+        <p>Please select games you anticipate the most:</p>
+      </div>
+      <div class="input-div">
+        <input type="checkbox" value="kingdom" id="kingdom" name="anticipate">
+        <label for="kingdom">Kingdom Hearts 3</label><br>
+        <input type="checkbox" value="crackdown" id="crackdown" name="anticipate">
+        <label for="crackdown">Crackdown 3</label><br>
+        <input type="checkbox" value="daysgone" id="daysgone" name="anticipate">
+        <label for="daysgone">Days Gone</label><br>
+        <input type="checkbox" value="rage" id="rage" name="anticipate">
+        <label for="rage">Rage 2 </label><br>
+        <input type="checkbox" value="psychonauts" id="psychonauts" name="anticipate">
+        <label for="psychonauts">Psychonauts 2 </label><br>
+        <input type="checkbox" value="stranding" id="stranding" name="anticipate">
+        <label for="stranding">Death Stranding </label><br>
+        <input type="checkbox" value="cyberpunk" id="cyberpunk" name="anticipate">
+        <label for="cyberpunk">Cyberpunk 2077</label><br>
+      </div>
+    </section>
+    <section id="text-section">
+      <label for="textarea">What other titles are you excited for or enjoy playing?</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="7" placeholder="Game Title, Next game title, ..."></textarea>
+    </section>
+    <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+      <p>Coded by <a href="https://codepen.io/Igors_Palcevskis/" target="_blank">Igors Palcevskis</a></p>
+  </footer>
+</body>
+</html>
